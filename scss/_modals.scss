@@ -1,0 +1,60 @@
+.fade2 {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all .2s linear;
+  display: block !important;
+}
+.fade2.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.modal-dialog {
+  // width: 95vw;
+  // height: 95vh;
+  margin: 0 auto;
+  padding: 0;
+
+  .modal-content {
+    height: auto;
+    //min-height: 95vh;
+    width: 75vw;
+    height: 80vh;
+    position: relative;
+    top: 50px;
+    right: 200px;
+    
+
+    .modal-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      .project-left {
+        flex-grow: 4;
+        width: 50px;
+
+        &.img {
+          overflow:none;
+        }
+      }
+      .project-right {
+        flex-grow: 1;
+
+        .project-technologies{
+          list-style: none;
+          .project-technology{
+            //padding: 2px 5px;
+            display: inline-block;
+            margin: .5rem;
+            padding: .25rem;
+            border: 1px solid #6c757d;
+          }
+        }
+      }
+    }
+    
+  }
+}

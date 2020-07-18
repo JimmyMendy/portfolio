@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jimmy Mendy - Web Developer</title>
+  <meta name="description" content="This is my web development portfolio. Check it out.">
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/css/styles.css">
+</head>
+<body>
+  <!-- HERO AREA -->
+  <section class="hero-unit dark-content d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-md-6">
+          <h1 class="hero-unit-heading">I'm Jimmy Mendy</h1>
+          <h2 class="hero-unit-subheading">Front End Developer</h2>
+          <p>I enjoy building incredible web experience for client from ideo to deployment, I can handle the entire process</p>
+          <p>This website showcase my most recent work</p>
+          <button id="portfolio-btn" class=" mt-5 btn btn-primary">Check out my portfolio</button>
+        </div>     
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO AREA -->
+  <section id="portfolio-section" class="content-section content-section-centered">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>My Portfolio</h2>
+          <p>Here's selection of my favorite and most recent pieces of work.</p>
+        </div>
+      </div>
+      <div class="row portfolio-cards">
+        <div class="col-sm-4">
+          <div class="portfolio-card">
+            <div class="portfolio-card-image" style="background-image: url('img/portfolio-placeholder.jpg')"></div>
+            <div class="portfolio-card-info">
+              <span class="portfolio-card-title">Web App</span>
+              <div class="portfolio-card-button">
+                <button href="#"
+                class=" btn btn-primary segundo" data-toggle="modal" data-target="#exampleModal">View project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="portfolio-card">
+            <div class="portfolio-card-image"style="background-image: url('img/portfolio-placeholder.jpg')"></div>
+            <div class="portfolio-card-info">
+              <span class="portfolio-card-title">Design - Development</span>
+              <div class="portfolio-card-button">
+                <button href="#"
+                class=" btn btn-primary segundo"
+                data-toggle="modal" data-target="#exampleModal">View project</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="portfolio-card">
+            <div class="portfolio-card-image" style="background-image: url('img/portfolio-placeholder.jpg')"></div>
+            <div class="portfolio-card-info">
+              <span class="portfolio-card-title">Branding</span>
+              <div class="portfolio-card-button">
+                <button href="#"
+                class=" btn btn-primary segundo" data-toggle="modal" data-target="#exampleModal">View project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal area -->
+  <!-- Modal -->
+<div class="modal fade2" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+      </div> -->
+      <div class="modal-body">
+        <div class="project-left">
+          <img src="" alt="project Image" class="Project-img">
+        </div>
+        <div class="project-right">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Project</h5> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="project-label">Project</div>
+          <h3 class="project-name">Booklist</h3>
+          <ul class="project-technologies">
+            <li class="project-technology">HTML & CSS</li>
+            <li class="project-technology">JavaScript</li>
+          </ul>
+          <div class="project-label">About</div>
+          <p class="project-summary"></p>
+          <div class="buttons">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Demo</button>
+        <button type="button" class="btn btn-primary" href="https://github.com/JimmyMendy/github-tuto">Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--ABOUT ME AREA -->
+  <section class="content-section content-section-side-image dark-content">
+    <div class="content-section-side-image-container d-block d-sm-none" style="background-image: url('img/who-am-i-mobile.jpg');"></div>
+    <div class="content-section-side-image-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 offset-sm-1">
+            <h2 class="content-section-side-image-heading">
+              <img class="img-circle mb-2" src="/img/Jimmy Mendy.jpeg" width="60" height="60" alt="Jimmy Mendy">
+              <br>
+              Who am I?
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, repellat?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, repellat?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, repellat?</p>
+            <p> To see my full range of skills <a href="#">Click here.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-section-side-image-container d-none d-sm-block" style="background-image: url('img/who-am-i-desktop.jpg');"></div>
+  </section>
+
+  <!--CONTACT ME AREA -->
+  <section class="content-section content-section-centered">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Get in touch</h2>
+          <p>Say Hello or ask me <em>anything</em>.  
+             I'm always happy to help</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-sm-3 col-sm-6">
+          <form class="contact-form" action="https://formspree.io/jimmy.mendy@gmail.com" method="POST">
+            <input class="contact-form-input" type="text" placeholder="Name" name="name" value="" required >
+            <input class="contact-form-input" type="email" placeholder="Email Adress" name="email" value="" required >
+            <input class="contact-form-input" type="number" placeholder="Phone number" name="phone_number" value="" required >
+            <textarea class="contact-form-input" name="query" placeholder="Your query"></textarea>
+            <div class="contact-form-actions">
+              <input class="contact-form-checkbox-input" id="consent" type="checkbox" name="consent" value="1" required>
+              <label for="consent" class="contact-form-checkbox-label">
+                I agree to receive a direct response to my enquiry via the contact details I provided above. 
+              </label>
+              <button class="btn btn-primary btn-block" type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--FOOTER AREA -->
+  <footer class="footer">
+    &copy; Jimmy Mendy - 2020
+  </footer>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

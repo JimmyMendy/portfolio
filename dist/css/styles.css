@@ -1,0 +1,310 @@
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  color: #423D3F;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0B3757;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+p {
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+a {
+  color: #9ACFF6;
+  text-decoration: underline;
+}
+
+a:hover, a:active, a:focus {
+  color: #54aef0;
+}
+
+.dark-content {
+  color: #fff;
+}
+
+.dark-content h1, .dark-content h2, .dark-content h3, .dark-content h4, .dark-content h5, .dark-content h6, .dark-content p {
+  color: #fff;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.hero-unit {
+  background: url("/img/hero-unit-background-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.hero-unit .hero-unit-subheading {
+  color: #9ACFF6;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  margin-bottom: 45px;
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-unit {
+    text-align: center;
+    background: url(/img/hero-unit-background-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-unit .hero-unit-heading {
+    font-size: 40px;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border: none;
+  padding: 15px 23px;
+}
+
+.btn.btn-primary {
+  background: linear-gradient(105.63deg, #d51111, #0029FF 147.44%);
+}
+
+.btn.segundo {
+  padding: 10px 18px;
+}
+
+.content-section {
+  padding: 80px 0;
+}
+
+.content-section.content-section-centered {
+  text-align: center;
+}
+
+.content-section.dark-content {
+  background: #303B48;
+}
+
+.content-section.content-section-side-image {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.content-section.content-section-side-image .content-section-side-image-content {
+  flex-grow: 1;
+  padding: 50px 0;
+}
+
+.content-section.content-section-side-image .content-section-side-image-container {
+  width: 250px;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .content-section.content-section-side-image {
+    flex-direction: column;
+  }
+  .content-section.content-section-side-image .content-section-side-image-container {
+    min-height: 80px;
+    width: 100%;
+  }
+  .content-section.content-section-side-image .content-section-side-image-heading {
+    text-align: center;
+  }
+}
+
+.portfolio-cards {
+  margin-top: 60px;
+}
+
+.portfolio-cards .portfolio-card {
+  background: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.portfolio-cards .portfolio-card .portfolio-card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-cards .portfolio-card .portfolio-card-info {
+  padding: 25px 5px;
+}
+
+.portfolio-cards .portfolio-card .portfolio-card-info .portfolio-card-title {
+  display: block;
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}
+
+.portfolio-cards .portfolio-card .portfolio-card-info .portfolio-card-credits-link {
+  display: block;
+  text-decoration: none;
+  color: #A7A7A7;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form .contact-form-input {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  padding: 18px 22px;
+  font-size: 18px;
+}
+
+.contact-form .contact-form-input::placeholder {
+  color: #9E9E9E;
+}
+
+.contact-form textarea.contact-form-input {
+  min-height: 160px;
+}
+
+.contact-form .contact-form-checkbox-input {
+  display: none;
+}
+
+.contact-form .contact-form-checkbox-input:checked + .contact-form-checkbox-label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contact-form .contact-form-checkbox-label {
+  position: relative;
+  color: #ADABAB;
+  text-align: left;
+  font-weight: 600;
+  font-family: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.contact-form .contact-form-checkbox-label:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -2px;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form .contact-form-checkbox-label:after {
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f00c";
+  left: 11px;
+  top: 9px;
+  color: #EA2626;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity .3s, transform .3s;
+}
+
+.footer {
+  background: #EEF1F2;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.fade2 {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all .2s linear;
+  display: block !important;
+}
+
+.fade2.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-dialog {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.modal-dialog .modal-content {
+  height: auto;
+  width: 75vw;
+  height: 80vh;
+  position: relative;
+  top: 50px;
+  right: 200px;
+}
+
+.modal-dialog .modal-content .modal-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.modal-dialog .modal-content .modal-body .project-left {
+  flex-grow: 4;
+  width: 50px;
+}
+
+.modal-dialog .modal-content .modal-body .project-left.img {
+  overflow: none;
+}
+
+.modal-dialog .modal-content .modal-body .project-right {
+  flex-grow: 1;
+}
+
+.modal-dialog .modal-content .modal-body .project-right .project-technologies {
+  list-style: none;
+}
+
+.modal-dialog .modal-content .modal-body .project-right .project-technologies .project-technology {
+  display: inline-block;
+  margin: .5rem;
+  padding: .25rem;
+  border: 1px solid #6c757d;
+}
